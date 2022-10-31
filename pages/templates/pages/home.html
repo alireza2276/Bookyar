@@ -1,805 +1,641 @@
+{% load static %}
 
-<!DOCTYPE html>
-<html dir="rtl" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قالب فروشگاه آنلاین کتاب | نت کپی </title>
+{% include 'pages/header-refrences.html' %}
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+{% include 'pages/header.html' %}
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+<!-- Start Main Slider -->
+<section id="main_slider">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <ul class="main_slider span12">
+                <li>
+                    <div class="slider_content">
+                        <h2>
+                            سلام & خوش آمدید
+                        </h2>
+                        <h4>
 
-</head>
-<body>
-
-<!-- header section starts  -->
-
-<header class="header">
-
-    <div class="header-1">
-
-        <a href="#" class="logo"> <i class="fas fa-book"></i> کتابخانه </a>
-
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="جستجو کنید" id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-        <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <div id="login-btn" class="fas fa-user"></div>
-        </div>
-
-    </div>
-
-    <div class="header-2">
-        <nav class="navbar">
-            <a href="#home">خانه</a>
-            <a href="#featured">ویژه</a>
-            <a href="#arrivals">جدیدها</a>
-            <a href="#reviews">نظرات</a>
-            <a href="#blogs">وبلاگ</a>
-        </nav>
-    </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- bottom navbar  -->
-
-<nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#featured" class="fas fa-list"></a>
-    <a href="#arrivals" class="fas fa-tags"></a>
-    <a href="#reviews" class="fas fa-comments"></a>
-    <a href="#blogs" class="fas fa-blog"></a>
-</nav>
-
-<!-- login form  -->
-
-<div class="login-form-container">
-
-    <div id="close-login-btn" class="fas fa-times"></div>
-
-    <form action="">
-        <h3>ورود</h3>
-        <span>نام کاربری</span>
-        <input type="email" name="" class="box" placeholder="ایمیل خود را وارد کنید" id="">
-        <span>رمز عبور</span>
-        <input type="password" name="" class="box" placeholder="رمز عبور خود را وارد کنید" id="">
-        <div class="checkbox">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me"> به خاطر سپردن</label>
-        </div>
-        <input type="submit" value="sign in" class="btn">
-        <p>رمز خود را فراموش کرده اید ؟ <a href="#">اینجا کلیک کنید</a></p>
-        <p>ثبت نام نکرده اید ؟ <a href="#">ساخت حساب</a></p>
-    </form>
-
-</div>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="row">
-
-        <div class="content">
-            <h3>تا 75٪ تخفیف</h3>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-            <a href="#" class="btn">اکنون خرید کنید</a>
-        </div>
-
-        <div class="swiper books-slider">
-            <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
-            </div>
-            <img src="image/stand.png" class="stand" alt="">
-        </div>
-
-    </div>
-
+                            لورم ایپسوم یا طرح‌نما </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                        <a href="#" class="purchase"> خرید <span> $15</span> </a>
+                    </div>
+                    <div class="slider_img">
+                        <img src="{% static 'images/slider_book.png' %}" alt="Slider image"/>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <div class="book_img"><img src="{% static 'images/book_after.png' %}" alt=""/></div>
 </section>
+<!-- End Main Slider -->
 
-<!-- home section ense  -->
+<!-- Start Book Detail Slider -->
+<section id="book_detail_slider">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <figure class="span5 scr-style">
+                <div class="side" id="side2">
+                    <div class="center">
+                        <div class="photo">
+                            <div class="face">
+                                <img src="{% static 'images/image01.png' %}" alt="">
+                            </div>
+                            <div class="dos">
+                                <img src="{% static 'images/image02.png' %}" alt="">
+                            </div>
+                            <div class="container-draggable">
+                                <span class="line-separator"></span>
+                                <a href="javascript:void(0)" class="btn-drag-watch">&lt; &gt;</a>
+                            </div>
+                        </div>
+                        <div class="cleaner"></div>
+                    </div>
+                </div>
+            </figure>
+            <figure class="span7">
+                <div class="slider_content">
+                    <h2>
 
-<!-- icons section starts  -->
-
-<section class="icons-container">
-
-    <div class="icons">
-        <i class="fas fa-shipping-fast"></i>
-        <div class="content">
-            <h3>ارسال رایگان</h3>
-            <p>سفارش بالای 100 هزار تومان</p>
-        </div>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-lock"></i>
-        <div class="content">
-            <h3>پرداخت امن</h3>
-            <p>100 پرداخت مطمئن</p>
-        </div>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-redo-alt"></i>
-        <div class="content">
-            <h3>بازگشت آسان</h3>
-            <p>10 روز مهلت بازگشت</p>
-        </div>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-headset"></i>
-        <div class="content">
-            <h3>پشتیبانی 7/24</h3>
-            <p>در هر زمان با ما تماس بگیرید</p>
-        </div>
-    </div>
-
+                        لورم ایپسوم یا طرح‌نما </h2>
+                    <h4><em> طراحی گرافیک </em>
+                        در چرا
+                        <span>
+کسب و کار هرگز
+ </span>
+                        رشد و
+                        <span>لورم ایپسوم متن ساختگی</span></h4>
+                    <figure class="span6 first details">
+                        <ul>
+                            <li>
+                                <strong> مرجع</strong>
+                                <p> J031033200 </p>
+                            </li>
+                            <li>
+                                <strong>جنبش</strong>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است </p>
+                            </li>
+                            <li>
+                                <strong>نشانه</strong>
+                                <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
+                            </li>
+                            <li>
+                                <strong>برنامه ریزی</strong>
+                                <p> 69 jewels </p>
+                            </li>
+                            <li>
+                                <strong>اجرای</strong>
+                                <p> 48 hours </p>
+                            </li>
+                            <li>
+                                <strong> فرکانس </strong>
+                                <p> 18,000 v.p.h </p>
+                            </li>
+                        </ul>
+                    </figure>
+                    <figure class="span6 details">
+                        <ul>
+                            <li>
+                                <strong>مرجع</strong>
+                                <p> J031033200 </p>
+                            </li>
+                            <li>
+                                <strong>جنبش</strong>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است</p>
+                            </li>
+                            <li>
+                                <strong>نشانه</strong>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                            </li>
+                            <li>
+                                <strong>برنامه ریزی</strong>
+                                <p> 69 jewels </p>
+                            </li>
+                            <li>
+                                <strong>اجرای</strong>
+                                <p> 48 hours </p>
+                            </li>
+                            <li>
+                                <strong>فرکانس</strong>
+                                <p> 18,000 v.p.h </p>
+                            </li>
+                        </ul>
+                    </figure>
+                    <a href="#" class="purchase2">$20.00
+                        خرید کتاب
+                    </a>
+                </div>
+            </figure>
+        </section>
+    </section>
 </section>
+<!-- End Book Detail Slider -->
 
-<!-- icons section ends -->
+<!-- Start Features Boxes -->
+<section id="features" class="ptb">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <h2>
+                کلید امکانات
+            </h2>
+            <h4> <span>
 
-<!-- featured section starts  -->
-
-<section class="featured" id="featured">
-
-    <h1 class="heading"> <span>کتابهای برجسته</span> </h1>
-
-    <div class="swiper featured-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-2.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-3.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-4.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-5.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-6.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-7.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-8.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-9.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-10.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>کتاب برجسته</h3>
-                    <div class="price">5 هزار تومان <span>10 هزارتومان</span></div>
-                    <a href="#" class="btn">اضافه کردن به سبد خرید</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-    </div>
-
+لورم ایپسوم یا طرح‌نما  </span>متن ساختگی با تولید سادگی</h4>
+            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد
+                کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                مورد استفاده قرار گیرد</p>
+            <ul class="span12" id="feature_list">
+                <li class="span3 first">
+                    <div class="feature_box span10 first">
+                        <span class="f_num"> #1 </span>
+                        <a href="#"> <img src="{% static 'images/f1.png' %}" alt="Feature"/> </a>
+                    </div>
+                    <h3>
+                        طراحی نوآورانه
+                    </h3>
+                </li>
+                <li class="span3">
+                    <div class="feature_box span10 first">
+                        <span class="f_num"> #2 </span>
+                        <a href="#"> <img src="{% static 'images/f2.png' %}" alt="Feature"/> </a>
+                    </div>
+                    <h3>
+                        موفقیت نژاد
+                    </h3>
+                </li>
+                <li class="span3">
+                    <div class="feature_box span10 first">
+                        <span class="f_num"> #3 </span>
+                        <a href="#"> <img src="{% static 'images/f3.png' %}" alt="Feature"/> </a>
+                    </div>
+                    <h3>
+                        ایجاد مخاطب
+                    </h3>
+                </li>
+                <li class="span3">
+                    <div class="feature_box span10 first">
+                        <span class="f_num"> #4 </span>
+                        <a href="#"> <img src="{% static 'images/f4.png' %}" alt="Feature"/> </a>
+                    </div>
+                    <h3>
+                        بهبود هویت
+                    </h3>
+                </li>
+            </ul>
+            <a href="#" class="view_feature">
+                تمام امکانات
+            </a>
+        </section>
+    </section>
 </section>
+<!-- End Features Boxes -->
 
-<!-- featured section ends -->
-
-<!-- newsletter section starts -->
-
-<section class="newsletter">
-
-    <form action="">
-        <h3>برای آخرین به روز رسانی مشترک شوید</h3>
-        <input type="email" name="" placeholder="ایمیل خود را وارد کنید" id="" class="box">
-        <input type="submit" value="عضویت" class="btn">
-    </form>
-
+<!-- Start Parallax Section -->
+<section id="parallax">
+    <h1>
+        کمال به دست آورد
+    </h1>
 </section>
+<!-- End Parallax Section -->
 
-<!-- newsletter section ends -->
+<!-- Start Pricing Section -->
+<section id="pricing" class="ptb">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <h2>
+                قیمت گذاری عالی
+            </h2>
+            <h4> <span>
 
-<!-- arrivals section starts  -->
+لورم ایپسوم یا طرح‌نما</span>
 
-<section class="arrivals" id="arrivals">
-
-    <h1 class="heading"> <span>کتابهای جدید</span> </h1>
-
-    <div class="swiper arrivals-slider">
-
-        <div class="swiper-wrapper">
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-2.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-3.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-4.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-5.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="swiper arrivals-slider">
-
-        <div class="swiper-wrapper">
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-6.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-7.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-8.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-9.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="image/book-10.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>تازه رسیده ها</h3>
-                    <div class="price">5 هزارتومان <span>10 هزارتومان</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-    </div>
-
+                لورم ایپسوم یا طرح‌نما </h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد </p>
+            <section id="prixing_box" class="span12">
+                <figure class="span6 first">
+                    <h2>
+                        نشان نام پی دی اف
+                    </h2>
+                    <span class="bPrice"> $ <span>25 </span> /چوب</span>
+                    <ul>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
+                        </li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
+                        </li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
+                        </li>
+                    </ul>
+                </figure>
+                <figure class="span6">
+                    <h2>
+                        چاپ نام مدالها
+                    </h2>
+                    <span class="bPrice"> $ <span>37 </span> /چوب </span>
+                    <ul>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
+                        </li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
+                        </li>
+                        <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
+                        </li>
+                    </ul>
+                </figure>
+            </section>
+        </section>
+    </section>
 </section>
+<!-- End Pricing Section -->
 
-<!-- arrivals section ends -->
+<!-- Start Mobile Slider Section -->
+<section id="view">
+    <section class="view_head ptb">
+        <h1>
+            موبایل آماده
 
-<!-- deal section starts  -->
-
-<section class="deal">
-
-    <div class="content">
-        <h3>معامله روز</h3>
-        <h1>تا 50٪ تخفیف</h1>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-        <a href="#" class="btn">اکنون خرید کنید</a>
-    </div>
-
-    <div class="image">
-        <img src="image/deal-img.jpg" alt="">
-    </div>
-
+            <span>
+آن را در دستگاه های مورد علاقه خود را بخوانید!
+</span>
+        </h1>
+    </section>
+    <section class="container-fluid container" dir="ltr">
+        <section class="row-fluid">
+            <figure class="mobile_slider">
+                <ul id="mobile_slider">
+                    <li><img src="{% static 'images/slider_mobile_1.png' %}" alt=""/></li>
+                    <li><img src="{% static 'images/image08.png' %}" alt=""/></li>
+                    <li><img src="{% static 'images/image09.png' %}" alt=""/></li>
+                </ul>
+            </figure>
+            <h4> طراحی <span>
+روح اساسی
+ </span>
+                خلقت بشر ساخته شده است که به پایان می رسد
+                <span>
+خود را بیان
+ </span>
+                در پی در پی از لایه های بیرونی
+                <em>
+                    محصول و یا خدمات
+                </em>. </h4>
+        </section>
+    </section>
+    <section class="container-fluid container ptb">
+        <section class="row-fluid">
+            <figure class="view_quote span6">
+                <h1>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</h1>
+            </figure>
+            <figure class="span6 view_quote">
+                <h4>
+                    دانلود نمونه رایگان از کتاب:
+                </h4>
+                <i class="icon-off"></i>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد </p>
+            </figure>
+        </section>
+    </section>
 </section>
+<!-- Start Mobile Slider Section -->
 
-<!-- deal section ends -->
-
-<!-- reviews section starts  -->
-
-<section class="reviews" id="reviews">
-
-    <h1 class="heading"> <span>نظرات مشتریان</span> </h1>
-
-    <div class="swiper reviews-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/pic-1.png" alt="">
-                <h3>نام مشتری</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-2.png" alt="">
-                <h3>نام مشتری</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-3.png" alt="">
-                <h3>نام مشتری</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="image/pic-4.png" alt="">
-                <h3>نام مشتری</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-5.png" alt="">
-                <h3>نام مشتری</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-6.png" alt="">
-                <h3>نام مشتری</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
+<!-- Start About The Author -->
+<section id="author" class="ptb">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <figure class="span6">
+                <h2>
+                    درباره نویسنده
+                </h2>
+                <span class="author_name">البرز الهامیان</span>
+                <span class="author_status">
+نویسنده منتشر شده
+</span>
+                <p> کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                    ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ
+                    به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود
+                    طراحی اساسا مورد استفاده قرار گیرد </p>
+                <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد </p>
+                <a href="#" class="req_inf">
+                    درخواست اطلاعات
+                </a>
+            </figure>
+            <figure class="span6 author_slider" dir="ltr">
+                <ul id="author_slider">
+                    <li><img src="{% static 'images/image07.jpg' %}" alt=""/></li>
+                    <li><img src="{% static 'images/image07.jpg' %}" alt=""/></li>
+                </ul>
+            </figure>
+        </section>
+    </section>
 </section>
+<!-- End About The Author -->
 
-<!-- reviews section ends -->
+<!-- Start Scroll Gallery -->
+<section id="quick_view" class="ptb">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <h1>
+                اوج سریع به کتاب
+            </h1>
+            <h4>
+                همه چیز شما را با این کتاب یاد بگیرند نیست
+                <span>
+در توضیح مختصری توضیح داده شود
+ </span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است <em>
 
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> <span>وبلاگ</span> </h1>
-
-    <div class="swiper blogs-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>عنوان متن در اینجا</h3>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
-                    <a href="#" class="btn">مطالعه بیشتر</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>عنوان متن در اینجا</h3>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
-                    <a href="#" class="btn">مطالعه بیشتر</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>عنوان متن در اینجا</h3>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
-                    <a href="#" class="btn">مطالعه بیشتر</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-4.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>عنوان متن در اینجا</h3>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
-                    <a href="#" class="btn">مطالعه بیشتر</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="image/blog-5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>عنوان متن در اینجا</h3>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
-                    <a href="#" class="btn">مطالعه بیشتر</a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
+                لورم ایپسوم یا طرح‌نما </em></h4>
+        </section>
+    </section>
 </section>
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>دیگر شعبه ها</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> تهران </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> مشهد </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> اصفهان </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> شیراز </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> تبریز </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> یزد </a>
+<section id="scrollgallery" dir="ltr">
+    <div class="book-col">
+        <img src="{% static 'images/image03.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
         </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> خانه </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> ویژه </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> برجسته </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> نظرات </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> وبلاگ </a>
-        </div>
-
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> حساب کاربری </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> اقلام سفارش داده شده </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> قوانین </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> روش پرداخت </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> دیگر سرویس ها </a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> admin@netcopy.ir </a>
-            <img src="image/worldmap.png" class="map" alt="">
-        </div>
-
     </div>
-
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
+    <div class="book-col">
+        <img src="{% static 'images/image04.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
     </div>
-
-    <div class="credit"> فارسی و راست چین شده توسط <a href="https://netcopy.ir"><span>نت کپی</span></a> </div>
-
+    <div class="book-col">
+        <img src="{% static 'images/image05.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image06.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image03.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image04.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image05.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image06.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image03.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image04.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image05.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image06.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image03.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image04.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image05.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
+    <div class="book-col">
+        <img src="{% static 'images/image06.jpg' %}" alt="">
+        <div class="book-cap">
+            <strong class="title">صفحه 5</strong>
+            <p>
+                در چیزهایی که
+                <span>
+به شما خواهد آموخت
+</span></p>
+        </div>
+    </div>
 </section>
+<!-- End Scroll Gallery -->
 
-<!-- footer section ends -->
+<!-- Start Reviews Section -->
+<section id="reviews" class="ptb">
+    <section class="container container-fluid">
+        <section class="row-fluid">
+            <h2>
+                خواندن این بررسی بزرگ
+            </h2>
+            <h4> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</h4>
+            <section class="main-slider">
+                <div class="bb-custom-wrapper">
+                    <span class="t-ar-l"> </span>
+                    <span class="t-ar-r"> </span>
+                    <div class="bb-bookblock" id="bb-bookblock">
+                        <div class="bb-item" style="display: block;">
+                            <div class="book_flip_inner">
+                                <figure class="span5 review_list first">
+                                    <ul class="review_list">
+                                        <li>
+                                            <i class="icon-quote-right"></i>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است</p>
+                                            <strong> -
 
-<!-- loader  -->
+                                                لورم ایپسوم </strong>
+                                        </li>
+                                        <li>
+                                            <i class="icon-quote-right"></i>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است</p>
+                                            <strong> -
 
+                                                لورم ایپسوم </strong>
+                                        </li>
+                                        <li>
+                                            <i class="icon-quote-right"></i>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است</p>
+                                            <strong> -
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+                                                لورم ایپسوم </strong>
+                                        </li>
+                                    </ul>
+                                </figure>
+                                <figure class="span5 review_list pull-left">
+                                    <ul class="review_list">
+                                        <li>
+                                            <i class="icon-quote-right"></i>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است</p>
+                                            <strong> -
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+                                                لورم ایپسوم </strong>
+                                        </li>
+                                        <li>
+                                            <i class="icon-quote-right"></i>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است</p>
+                                            <strong> -
 
-</body>
-</html>
+                                                لورم ایپسوم </strong>
+                                        </li>
+                                        <li>
+                                            <i class="icon-quote-right"></i>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                                طراحان گرافیک است</p>
+                                            <strong> -
+
+                                                لورم ایپسوم </strong>
+                                        </li>
+                                    </ul>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="bb-custom-nav"><a class="right-arrow" id="bb-nav-prev" href="#">Previous</a> <a
+                            class="left-arrow" id="bb-nav-next" href="#">Next</a></nav>
+                    <div id="book_pages"><img src="{% static 'images/book_after_2.png' %}" alt=""/></div>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>
+<!-- End Reviews Section -->
+
+{% include 'pages/footer.html' %}
+
+<!-- End Main Wrapper -->
+
+{% include 'pages/footer-refrences.html' %}

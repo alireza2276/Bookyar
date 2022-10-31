@@ -1,0 +1,55 @@
+{% load static %}
+
+
+<body data-spy="scroll" data-target=".navbar">
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<!-- Start Main Wrapper -->
+<div class="wrapper">
+    <header id="header">
+        <section class="container-fluid container">
+            <section class="row-fluid">
+                <div class="logo span3">
+                    <h1 id="logo"><a href="index.html"><img src="{% static 'images/logo.png' %}"
+                                                            alt="Bookish Theme Logo"/></a></h1>
+                </div>
+                <nav id="nav">
+                    <div class="navbar navbar-inverse pull-left span9">
+                        <div class="navbar-inner">
+                            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar"
+                                    type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                                    class="icon-bar"></span></button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="#main_slider">صفحه اصلی</a></li>
+                                    <li><a href="#book_detail_slider">
+                                        اطلاعات کتاب
+                                    </a></li>
+                                    <li><a href="#features">
+                                        ویژگی های کلیدی
+                                    </a></li>
+                                    <li><a href="#pricing"> قیمت گذاری</a></li>
+                                    <li><a href="#view">
+                                        تلفن همراه آماده
+                                    </a></li>
+                                    <li><a href="#author">
+                                        درباره نویسنده
+                                    </a></li>
+                                    <li><a href="#quick_view">
+
+                                        لورم ایپسوم </a></li>
+                                    <li><a href="#reviews">
+                                        بررسی کتاب
+                                    </a></li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </div>
+                        <!-- /.navbar-inner -->
+                    </div>
+                    <!-- /.navbar -->
+                </nav>
+            </section>
+        </section>
+    </header>
