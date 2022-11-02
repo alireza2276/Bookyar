@@ -19,7 +19,7 @@ class Book(models.Model):
     datetime_modified = models.DateTimeField(auto_now=True)
 
     def get_absolute_url(self):
-        return reverse('books_detail', args=[self.pk])
+        return reverse('books_detail', args=[self.id])
 
     def __str__(self):
         return f"{self.title} - {self.user}"
