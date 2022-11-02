@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+{% include 'pages/header-refrences.html' %}
+
+{% include 'pages/header.html' %}
+
+
+<div class="container mt-4">
+    <div dir="rtl">
+        <h2>
+    <span class="product-shaped-header product-list-dark">
+        {% translate 'New' %}
+    </span>
+        </h2>
+    </div>
+    <div class="row flex-row-reverse justify-content-md-center">
+        {% for new in new_book %}
+            <div class="card m-2" style="max-width: 45%">
+                <div class="row g-0 h-100" dir="rtl">
+                    <div class="col-md-4">
+                        <a href="{{ new.get_absolute_url }}"><img src="{{ new.image.url }}"
+                                                                  class="img-fluid rounded-start" alt="..."></a>
+                    </div>
+                    <div class="col-md-8 h-100">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="card-body">
+                                <a href="{{ new.get_absolute_url }}" class="text-decoration-none"><h3
+                                        class="card-title" style="color: grey">
+                                    <strong>{{ new.title }}</strong></h3></a>
+                                <p class="card-text pt-3">{{ new.description|truncatewords:20 }}</p>
+                                <p class="text-muted">نویسنده: {{ new.author }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <a dir="rtl" href="{% url 'books_list' %}"><span class="btn btn-secondary">{% translate 'See All' %}</span></a>
+    </div>
+</div>
+
+{% include 'pages/footer.html' %}
+
+{% include 'pages/footer-refrences.html' %}
