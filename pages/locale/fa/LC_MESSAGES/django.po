@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-01 19:20+0330\n"
+"POT-Creation-Date: 2022-11-02 20:46+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#: .\templates\pages\header.html:23
+
+#: .\templates\pages\header.html:24
 msgid "Welcome"
 msgstr "خوش آمدی"
+
+#: .\templates\pages\home.html:12
+msgid "New"
+msgstr "تازه ها"
+
+#: .\templates\pages\home.html:38
+msgid "See All"
+msgstr "مشاهده همه"

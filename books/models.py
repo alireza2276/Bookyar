@@ -23,3 +23,16 @@ class Book(models.Model):
 
     def __str__(self):
         return f"{self.title} - {self.user}"
+
+
+class Comment(models.Model):
+    name = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments')
+    email = models.EmailField()
+    description = models.TextField()
+
+    datetime_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} - {self.book}"
+
