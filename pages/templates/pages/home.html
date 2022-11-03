@@ -28,7 +28,9 @@
                                         class="card-title" style="color: grey">
                                     <strong>{{ new.title }}</strong></h3></a>
                                 <p class="card-text pt-3">{{ new.description|truncatewords:20 }}</p>
-                                <p class="text-muted">نویسنده: {{ new.author }}</p>
+                                <p class="text-muted">{% translate 'author' %}: {{ new.author }}</p>
+                                <del>{{ new.price }}{% translate '$' %}</del>
+                                <h4 style="color: brown">{{ new.discount }}{% translate '$' %}</h4>
                             </div>
                         </div>
                     </div>

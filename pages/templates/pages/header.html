@@ -9,26 +9,26 @@
             <img src="{% static 'icons/book.png' %}" alt="" height="30"
                  class="d-inline-block align-text-top">
         </a>
-        <a class="navbar-brand mx-3" href="#">کتاب یار</a>
+        <a class="navbar-brand mx-3" href="#">{% translate 'bookyar' %}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">خانه</a>
-                <a class="nav-link" href="{% url 'books_new' %}">اضافه کردن کتاب</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">{% translate 'home' %}</a>
+                <a class="nav-link" href="{% url 'books_new' %}">{% translate 'add books' %}</a>
             </div>
         </div>
         {% if user.is_authenticated %}
             <div class="mx-2 text-white">{% translate 'Welcome' %} {{ user.username }} <a
-                    class="link-light text-decoration-none" href="{% url 'account_logout' %}">خروج</a>
+                    class="link-light text-decoration-none" href="{% url 'account_logout' %}">{% translate 'logout' %}</a>
             </div>
         {% else %}
             <div class="mx-2 text-white"><a
-                    class="link-light text-decoration-none" href="{% url 'account_login' %}">ورود</a>
+                    class="link-light text-decoration-none" href="{% url 'account_login' %}">{% translate 'login' %}</a>
                 <a
-                        class="link-light text-decoration-none" href="{% url 'account_signup' %}">ثبت نام</a>
+                        class="link-light text-decoration-none" href="{% url 'account_signup' %}">{% translate 'signup' %}</a>
             </div>
         {% endif %}
     </div>
