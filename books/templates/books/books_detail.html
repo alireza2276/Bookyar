@@ -19,10 +19,10 @@
                     </div>
                     <div class="col-xs-12 col-md-6 text-center text-md-end mt-md-1 mt-4">
                         <h1>{{ book.title }}</h1>
-                        <h5 class="small my-1"><span class="text-muted">نویسنده: </span>{{ book.author }}</h5>
-                        <h5 class="small my-1"><span class="text-muted">مترجم: </span>{{ book.translation }}</h5>
-                        <h5 class="small my-1"><span class="text-muted">انتشارات: </span>{{ book.publication }}</h5>
-                        <h5 class="small my-1"><span class="text-muted">ایجاد کننده: </span>{{ book.user }}</h5>
+                        <h5 class="small my-1"><span class="text-muted">{% translate 'author' %}: </span>{{ book.author }}</h5>
+                        <h5 class="small my-1"><span class="text-muted">{% translate 'translater' %}: </span>{{ book.translation }}</h5>
+                        <h5 class="small my-1"><span class="text-muted">{% translate 'publication' %}: </span>{{ book.publication }}</h5>
+                        <h5 class="small my-1"><span class="text-muted">{% translate 'creator' %}: </span>{{ book.user }}</h5>
                         {% if book.user == user %}
                             <a href="{% url 'books_edit' book.id %}"><span
                                     class="btn btn-primary">{% translate 'Edit' %}</span></a>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-xs-12 col-md-3 d-flex flex-column">
                         <h3 class="align-self-center pt-2 text-muted align-self-md-end">
-                            {{ book.discount }} تومان
+                            {{ book.discount }} {% translate '$' %}
                         </h3>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
 
             <div class="d-flex justify-content-center">
                 <div class="card shadow my-3 p-5 w-sm-75 w-100">
-                    <h2 class="mb-5">نظرات:</h2>
+                    <h2 class="mb-5">{% translate 'comments' %}:{{ book.comments.count }}</h2>
                     {% for comment in comments %}
                         <div class="col-xs-12 col-md-3 d-flex flex-column">
                             <span style="font-size: x-small"
@@ -65,11 +65,11 @@
 
             <div class="d-flex justify-content-center">
                 <div class="card shadow my-3 p-5 w-sm-75 w-100">
-                    <h3>نظر خود را وارد کنید:</h3>
+                    <h3>{% translate 'write your comment' %}:</h3>
                     <form method="POST">
                         {% csrf_token %}
                         {{ comment_form|crispy }}
-                        <button type="submit" class="btn btn-primary">ارسال</button>
+                        <button type="submit" class="btn btn-primary">{% translate 'send' %}</button>
                     </form>
                 </div>
             </div>

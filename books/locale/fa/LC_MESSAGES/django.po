@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-02 20:49+0330\n"
+"POT-Creation-Date: 2022-11-03 17:10+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#: .\templates\books\books_detail.html:27
+
+#: .\templates\books\books_detail.html:22 .\templates\books\books_list.html:25
+msgid "author"
+msgstr "نویسنده"
+
+#: .\templates\books\books_detail.html:23
+msgid "translater"
+msgstr "مترجم"
+
+#: .\templates\books\books_detail.html:24
+msgid "publication"
+msgstr "انتشارات"
+
+#: .\templates\books\books_detail.html:25
+msgid "creator"
+msgstr "ایجاد کننده"
+
+#: .\templates\books\books_detail.html:28
 msgid "Edit"
 msgstr "ویرایش کتاب"
 
-#: .\templates\books\books_detail.html:29
+#: .\templates\books\books_detail.html:30
 msgid "Delete"
 msgstr "حذف کتاب"
+
+#: .\templates\books\books_detail.html:35
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\books\books_detail.html:49
+msgid "comments"
+msgstr "نظرات"
+
+#: .\templates\books\books_detail.html:68
+msgid "write your comment"
+msgstr "نظر خود را وارد کنید"
+
+#: .\templates\books\books_detail.html:72
+msgid "send"
+msgstr "ارسال"
 
 #: .\templates\books\books_list.html:39
 msgid "Previous"
