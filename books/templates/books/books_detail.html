@@ -1,6 +1,7 @@
 {% load static %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+{% load jalali_tags %}
 
 {% include 'pages/header-refrences.html' %}
 
@@ -19,10 +20,14 @@
                     </div>
                     <div class="col-xs-12 col-md-6 text-center text-md-end mt-md-1 mt-4">
                         <h1>{{ book.title }}</h1>
-                        <h5 class="small my-1"><span class="text-muted">{% translate 'author' %}: </span>{{ book.author }}</h5>
-                        <h5 class="small my-1"><span class="text-muted">{% translate 'translater' %}: </span>{{ book.translation }}</h5>
-                        <h5 class="small my-1"><span class="text-muted">{% translate 'publication' %}: </span>{{ book.publication }}</h5>
-                        <h5 class="small my-1"><span class="text-muted">{% translate 'creator' %}: </span>{{ book.user }}</h5>
+                        <h5 class="small my-1"><span
+                                class="text-muted">{% translate 'author' %}: </span>{{ book.author }}</h5>
+                        <h5 class="small my-1"><span
+                                class="text-muted">{% translate 'translater' %}: </span>{{ book.translation }}</h5>
+                        <h5 class="small my-1"><span
+                                class="text-muted">{% translate 'publication' %}: </span>{{ book.publication }}</h5>
+                        <h5 class="small my-1"><span
+                                class="text-muted">{% translate 'creator' %}: </span>{{ book.user }}</h5>
                         {% if book.user == user %}
                             <a href="{% url 'books_edit' book.id %}"><span
                                     class="btn btn-primary">{% translate 'Edit' %}</span></a>
@@ -50,7 +55,7 @@
                     {% for comment in comments %}
                         <div class="col-xs-12 col-md-3 d-flex flex-column">
                             <span style="font-size: x-small"
-                                  class="align-self-center pt-2 text-muted align-self-md-end">{{ comment.datetime_created }}</span>
+                                  class="">{{ comment.datetime_created|to_jalali:'%Y %B %d' }}</span>
                         </div>
                         <div class="border-bottom mb-3">
                             <div class="">

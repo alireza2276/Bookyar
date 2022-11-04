@@ -3,9 +3,20 @@ from django.db import models
 from django.urls import reverse
 
 
+class Category(models.Model):
+    title = models.CharField(max_length=50)
+
+    datetime_created = models.DateTimeField(auto_now_add=True)
+    datetime_modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+
 class Book(models.Model):
     title = models.CharField(max_length=50)
     author = models.CharField(max_length=50)
+    category = models.ManyToManyField(Category, related_name='categories')
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     image = models.ImageField(upload_to='images/books')
     translation = models.CharField(max_length=50, null=True, blank=True)

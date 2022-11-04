@@ -5,7 +5,7 @@ from django.urls import reverse_lazy
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from books.forms import CommentForm
-from books.models import Book
+from books.models import Book, Category
 
 
 class BooksListView(ListView):
@@ -71,3 +71,10 @@ class BooksDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def test_func(self):
         obj = self.get_object()
         return obj.user == self.request.user
+
+
+
+def category(request, pk=None):
+    categories = get_object_or_404(Category, id=pk)
+    books = categories.categories.all()
+    return render(request, 'books/books_list.html', {'categories': categories, 'books': books})

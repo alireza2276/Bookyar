@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third_app
+    'jalali_date',
     'crispy_forms',
     'allauth',
     'allauth.account',
@@ -73,6 +74,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'context_processors.context_processors.show_book_list',
+                'context_processors.context_processors.show_category',
             ],
         },
     },

@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import Book, Comment
+from .models import Book, Comment, Category
 
 admin.site.register(Comment)
+admin.site.register(Category)
 
 
 @admin.register(Book)
