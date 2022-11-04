@@ -16,10 +16,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">{% translate 'home' %}</a>
-                <a class="nav-link" href="{% url 'books_new' %}">{% translate 'add books' %}</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+                   aria-current="page" href="{% url 'home' %}">{% translate 'home' %}</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'books_new' %}active{% endif %}"
+                   href="{% url 'books_new' %}">{% translate 'add books' %}</a>
                 {% for cat in category %}
-                    <a class="nav-link" href="{% url 'category' cat.id %}">{{ cat.title }}</a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'category' %}active{% endif %}"
+                       href="{% url 'category' cat.id %}">{{ cat.title }}</a>
                 {% endfor %}
 
             </div>
