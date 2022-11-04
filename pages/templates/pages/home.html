@@ -1,8 +1,52 @@
 {% load static %}
 {% load i18n %}
+{% load humanize %}
+{% load translation_number %}
+
+
 {% include 'pages/header-refrences.html' %}
 
 {% include 'pages/header.html' %}
+
+
+<div class="container mt-4">
+    <div dir="rtl">
+        <h2>
+    <span style="color: black; background-color: red; padding: 10px 40px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;">
+        {% translate 'Fantastic discount' %}
+    </span>
+        </h2>
+    </div>
+    <div class="row flex-row-reverse justify-content-md-center">
+        {% for dis in discount %}
+            <div class="card m-2" style="max-width: 45%">
+                <div class="row g-0 h-100" dir="rtl">
+                    <div class="col-md-4">
+                        <a href="{{ dis.get_absolute_url }}"><img src="{{ dis.image.url }}"
+                                                                  class="img-fluid rounded-start" alt="..."></a>
+                    </div>
+                    <div class="col-md-8 h-100">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="card-body">
+                                <a href="{{ dis.get_absolute_url }}" class="text-decoration-none"><h3
+                                        class="card-title" style="color: grey">
+                                    <strong>{{ dis.title }}</strong></h3></a>
+                                <p class="card-text pt-3">{{ dis.description|truncatewords:20 }}</p>
+                                <p class="text-muted">{% translate 'author' %}: {{ new.author }}</p>
+                                <del>{{ dis.price|intcomma:False|translate_number }}{% translate '$' %}</del>
+                                <h4 style="color: brown">
+                                    {{ dis.discount|intcomma:False|translate_number }}{% translate '$' %}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {#        <a dir="rtl" href="{% url 'category'  %}"><span class="btn btn-secondary">{% translate 'See All' %}</span></a>#}
+    </div>
+</div>
 
 
 <div class="container mt-4">
@@ -29,8 +73,9 @@
                                     <strong>{{ new.title }}</strong></h3></a>
                                 <p class="card-text pt-3">{{ new.description|truncatewords:20 }}</p>
                                 <p class="text-muted">{% translate 'author' %}: {{ new.author }}</p>
-                                <del>{{ new.price }}{% translate '$' %}</del>
-                                <h4 style="color: brown">{{ new.discount }}{% translate '$' %}</h4>
+                                <del>{{ new.price|intcomma:False|translate_number }}{% translate '$' %}</del>
+                                <h4 style="color: brown">
+                                    {{ new.discount|intcomma:False|translate_number }}{% translate '$' %}</h4>
                             </div>
                         </div>
                     </div>

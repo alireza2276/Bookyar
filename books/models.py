@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.urls import reverse
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -24,9 +25,10 @@ class Book(models.Model):
     price = models.PositiveIntegerField(null=True, blank=True)
     discount = models.PositiveIntegerField(null=True, blank=True)
     status = models.BooleanField(default=True)
+    fantastic_discount = models.BooleanField(default=False)
     description = models.TextField()
 
-    datetime_created = models.DateTimeField(auto_now_add=True)
+    datetime_created = models.DateTimeField(default=timezone.now)
     datetime_modified = models.DateTimeField(auto_now=True)
 
     def get_absolute_url(self):

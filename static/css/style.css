@@ -43,7 +43,11 @@
 .product-list-dark {
     background-color: dimgray;
     color: white;
+}
 
+.product-list-fantastic{
+    background-color: red;
+    color: black;
 }
 
 .product-shaped-header {

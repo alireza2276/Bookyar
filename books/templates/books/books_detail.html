@@ -2,6 +2,8 @@
 {% load i18n %}
 {% load crispy_forms_tags %}
 {% load jalali_tags %}
+{% load humanize %}
+{% load translation_number %}
 
 {% include 'pages/header-refrences.html' %}
 
@@ -22,8 +24,10 @@
                         <h1>{{ book.title }}</h1>
                         <h5 class="small my-1"><span
                                 class="text-muted">{% translate 'author' %}: </span>{{ book.author }}</h5>
-                        <h5 class="small my-1"><span
-                                class="text-muted">{% translate 'translater' %}: </span>{{ book.translation }}</h5>
+                        {% if book.translation != None %}
+                            <h5 class="small my-1"><span
+                                    class="text-muted">{% translate 'translater' %}: </span>{{ book.translation }}</h5>
+                        {% endif %}
                         <h5 class="small my-1"><span
                                 class="text-muted">{% translate 'publication' %}: </span>{{ book.publication }}</h5>
                         <h5 class="small my-1"><span
@@ -37,7 +41,7 @@
                     </div>
                     <div class="col-xs-12 col-md-3 d-flex flex-column">
                         <h3 class="align-self-center pt-2 text-muted align-self-md-end">
-                            {{ book.discount }} {% translate '$' %}
+                            {{ book.discount|intcomma:False|translate_number }} {% translate '$' %}
                         </h3>
                     </div>
                 </div>

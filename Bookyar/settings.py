@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.humanize',
+
     # Third_app
     'jalali_date',
     'crispy_forms',
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
     'books.apps.BooksConfig',
+    'persian_translate',
 ]
 SITE_ID = 1
 
@@ -75,6 +78,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'context_processors.context_processors.show_book_list',
                 'context_processors.context_processors.show_category',
+                'context_processors.context_processors.show_discount_book',
             ],
         },
     },
