@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 17:10+0330\n"
+"POT-Creation-Date: 2022-11-06 20:39+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,50 +18,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\templates\books\books_detail.html:22 .\templates\books\books_list.html:25
+#: .\templates\books\books_detail.html:26 .\templates\books\books_list.html:27
 msgid "author"
 msgstr "نویسنده"
 
-#: .\templates\books\books_detail.html:23
+#: .\templates\books\books_detail.html:29
 msgid "translater"
 msgstr "مترجم"
 
-#: .\templates\books\books_detail.html:24
+#: .\templates\books\books_detail.html:32
 msgid "publication"
 msgstr "انتشارات"
 
-#: .\templates\books\books_detail.html:25
+#: .\templates\books\books_detail.html:34
 msgid "creator"
 msgstr "ایجاد کننده"
 
-#: .\templates\books\books_detail.html:28
+#: .\templates\books\books_detail.html:37
 msgid "Edit"
 msgstr "ویرایش کتاب"
 
-#: .\templates\books\books_detail.html:30
+#: .\templates\books\books_detail.html:39
 msgid "Delete"
 msgstr "حذف کتاب"
 
-#: .\templates\books\books_detail.html:35
+#: .\templates\books\books_detail.html:44 .\templates\books\books_list.html:28
+#: .\templates\books\books_list.html:29
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\books\books_detail.html:49
+#: .\templates\books\books_detail.html:58
 msgid "comments"
 msgstr "نظرات"
 
-#: .\templates\books\books_detail.html:68
+#: .\templates\books\books_detail.html:77
 msgid "write your comment"
 msgstr "نظر خود را وارد کنید"
 
-#: .\templates\books\books_detail.html:72
+#: .\templates\books\books_detail.html:81
 msgid "send"
 msgstr "ارسال"
 
-#: .\templates\books\books_list.html:39
+#: .\templates\books\books_list.html:43
 msgid "Previous"
 msgstr "قبلی"
 
-#: .\templates\books\books_list.html:57
+#: .\templates\books\books_list.html:61
 msgid "Next"
 msgstr "بعدی"
+
+#: .\views.py:38
+msgid "Your comment successfully added"
+msgstr "نظر شما با موفقیت ثبت شد"
+
+#: .\views.py:51
+msgid "Your book successfully added"
+msgstr "کتاب شما با موفقیت اضافه شد"
+
+#: .\views.py:64
+msgid "Your book successfully updated"
+msgstr "کتاب شما با موفقیت ویرایش شد"

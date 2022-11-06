@@ -3,9 +3,11 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
-
+from django.contrib.messages.views import SuccessMessageMixin
 from books.forms import CommentForm
 from books.models import Book, Category
+from django.utils.translation import gettext_lazy as _
+from django.contrib import messages
 
 
 class BooksListView(ListView):
@@ -33,6 +35,7 @@ def book_detail_view(request, pk):
             new_comment.book = book
             new_comment.user = request.user
             new_comment.save()
+            messages.success(request, _('Your comment successfully added'))
             comment_form = CommentForm()
     else:
         comment_form = CommentForm()
@@ -41,10 +44,11 @@ def book_detail_view(request, pk):
                   {'book': book, 'comments': book_comment, 'comment_form': comment_form})
 
 
-class BooksCreateView(LoginRequiredMixin, CreateView):
+class BooksCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Book
     fields = ['title', 'author', 'translation', 'publication', 'price', 'discount', 'image', 'description']
     template_name = 'books/books_create.html'
+    success_message = _('Your book successfully added')
 
     def form_valid(self, form):
         book = form.save(commit=False)
@@ -53,10 +57,11 @@ class BooksCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class BooksUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class BooksUpdateView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, UpdateView):
     model = Book
     fields = ['title', 'author', 'translation', 'publication', 'price', 'discount', 'image', 'description']
     template_name = 'books/books_update.html'
+    success_message = _('Your book successfully updated')
 
     def test_func(self):
         obj = self.get_object()

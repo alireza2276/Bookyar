@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 20:08+0330\n"
+"POT-Creation-Date: 2022-11-06 20:24+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,39 +30,47 @@ msgstr "خانه"
 msgid "add books"
 msgstr "اضافه کردن کتاب"
 
-#: .\templates\pages\header.html:32
+#: .\templates\pages\header.html:33
 msgid "Welcome"
 msgstr "خوش آمدی"
 
-#: .\templates\pages\header.html:34
+#: .\templates\pages\header.html:35
 msgid "logout"
 msgstr "خروج"
 
-#: .\templates\pages\header.html:38
+#: .\templates\pages\header.html:39
 msgid "login"
 msgstr "ورود"
 
-#: .\templates\pages\header.html:41
+#: .\templates\pages\header.html:42
 msgid "signup"
 msgstr "ثبت نام"
 
-#: .\templates\pages\home.html:16
+#: .\templates\pages\header.html:51
+msgid "search your title"
+msgstr "عنوان کتاب را جستجو کنید"
+
+#: .\templates\pages\header.html:55
+msgid "search"
+msgstr "جستجو"
+
+#: .\templates\pages\home.html:18
 msgid "Fantastic discount"
 msgstr "تخفیف های شگفت انگیز"
 
-#: .\templates\pages\home.html:35 .\templates\pages\home.html:73
+#: .\templates\pages\home.html:37 .\templates\pages\home.html:75
 msgid "author"
 msgstr "نویسنده"
 
-#: .\templates\pages\home.html:36 .\templates\pages\home.html:38
-#: .\templates\pages\home.html:74 .\templates\pages\home.html:76
+#: .\templates\pages\home.html:38 .\templates\pages\home.html:40
+#: .\templates\pages\home.html:76 .\templates\pages\home.html:78
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\pages\home.html:54
+#: .\templates\pages\home.html:56
 msgid "New"
 msgstr "تازه ها"
 
-#: .\templates\pages\home.html:83
+#: .\templates\pages\home.html:85
 msgid "See All"
 msgstr "مشاهده همه"

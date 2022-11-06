@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.contrib.messages import constants as messages
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -150,3 +152,9 @@ LOGOUT_REDIRECT_URL = 'home'
 
 # Crispy_config
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+# for messages framework
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}

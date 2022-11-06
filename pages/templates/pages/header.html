@@ -48,10 +48,26 @@
 </nav>
 <div class="input-group container mt-3" style="">
     <form action="{% url 'search_books' %}" method="get" autocomplete="on">
-        <input name="q" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+        <input name="q" type="search" class="form-control rounded" placeholder="{% translate 'search your title' %}"
+               aria-label="Search"
                aria-describedby="search-addon"/>
     </form>
-    <button type="button" class="btn btn-outline-primary">search</button>
+    <button type="button" class="btn btn-outline-primary">{% translate 'search' %}</button>
+</div>
+
+<div class="mt-2" dir="rtl">
+    {% if messages %}
+
+        <div class="container">
+
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+
+        </div>
+
+
+    {% endif %}
 </div>
 
 
