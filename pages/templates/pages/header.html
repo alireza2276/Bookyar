@@ -28,6 +28,7 @@
 
             </div>
         </div>
+
         {% if user.is_authenticated %}
             <div class="mx-2 text-white">{% translate 'Welcome' %} {{ user.username }} <a
                     class="link-light text-decoration-none"
@@ -41,5 +42,17 @@
                         href="{% url 'account_signup' %}">{% translate 'signup' %}</a>
             </div>
         {% endif %}
+
     </div>
+
 </nav>
+<div class="input-group container mt-3" style="">
+    <form action="{% url 'search_books' %}" method="get" autocomplete="on">
+        <input name="q" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+               aria-describedby="search-addon"/>
+    </form>
+    <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+
+
+

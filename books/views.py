@@ -73,8 +73,10 @@ class BooksDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return obj.user == self.request.user
 
 
-
 def category(request, pk=None):
     categories = get_object_or_404(Category, id=pk)
     books = categories.categories.all()
     return render(request, 'books/books_list.html', {'categories': categories, 'books': books})
+
+
+
