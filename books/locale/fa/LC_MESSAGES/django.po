@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 20:39+0330\n"
+"POT-Creation-Date: 2022-11-06 21:25+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\templates\books\books_detail.html:26 .\templates\books\books_list.html:27
+#: .\models.py:18
+msgid "categories"
+msgstr "دسته بندی ها"
+
+#: .\models.py:22
+msgid "title"
+msgstr "عنوان"
+
+#: .\models.py:23 .\templates\books\books_detail.html:26
+#: .\templates\books\books_list.html:27
 msgid "author"
 msgstr "نویسنده"
+
+#: .\models.py:24
+msgid "category"
+msgstr "دسته بندی"
+
+#: .\models.py:25
+msgid "user"
+msgstr "کاربر"
+
+#: .\models.py:26
+msgid "image"
+msgstr "عکس"
+
+#: .\models.py:27
+msgid "translation"
+msgstr "مترجم"
+
+#: .\models.py:28 .\templates\books\books_detail.html:32
+msgid "publication"
+msgstr "انتشارات"
+
+#: .\models.py:29
+msgid "price"
+msgstr "قیمت"
+
+#: .\models.py:30
+msgid "discount"
+msgstr "با تخفیف"
+
+#: .\models.py:31
+msgid "status"
+msgstr "وضعیت"
+
+#: .\models.py:32
+msgid "fantastic_discount"
+msgstr "تخفیف های شگفت انگیز"
+
+#: .\models.py:33
+msgid "description"
+msgstr "شرح"
+
+#: .\models.py:35
+msgid "datetime_created"
+msgstr "زمان ایجاد"
+
+#: .\models.py:36
+msgid "datetime_modified"
+msgstr "زمان اصلاح"
+
+#: .\models.py:45
+msgid "books"
+msgstr "کتاب ها"
+
+#: .\models.py:60 .\templates\books\books_detail.html:58
+msgid "comments"
+msgstr "نظرات"
 
 #: .\templates\books\books_detail.html:29
 msgid "translater"
 msgstr "مترجم"
-
-#: .\templates\books\books_detail.html:32
-msgid "publication"
-msgstr "انتشارات"
 
 #: .\templates\books\books_detail.html:34
 msgid "creator"
@@ -46,10 +107,6 @@ msgstr "حذف کتاب"
 #: .\templates\books\books_list.html:29
 msgid "$"
 msgstr "تومان"
-
-#: .\templates\books\books_detail.html:58
-msgid "comments"
-msgstr "نظرات"
 
 #: .\templates\books\books_detail.html:77
 msgid "write your comment"

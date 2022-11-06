@@ -30,16 +30,19 @@
         </div>
 
         {% if user.is_authenticated %}
-            <div class="mx-2 text-white">{% translate 'Welcome' %} {{ user.username }} <a
-                    class="link-light text-decoration-none"
-                    href="{% url 'account_logout' %}">{% translate 'logout' %}</a>
+            <div class="mx-2 text-white btn btn-secondary">{% translate 'Welcome' %} {{ user.username }}
+                /
+                <a class="link-light text-decoration-none btn btn-danger"
+                   href="{% url 'account_logout' %}">{% translate 'logout' %}</a>
             </div>
         {% else %}
             <div class="mx-2 text-white"><a
                     class="link-light text-decoration-none" href="{% url 'account_login' %}">{% translate 'login' %}</a>
-                <a
-                        class="link-light text-decoration-none"
+                <img src="{% static 'icons/login.png' %}" alt="" style="height: 20px; width: 20px;">
+
+                <a class="link-light text-decoration-none"
                         href="{% url 'account_signup' %}">{% translate 'signup' %}</a>
+                <img src="{% static 'icons/signup.png' %}" alt=""  style="height: 20px; width: 20px;">
             </div>
         {% endif %}
 
