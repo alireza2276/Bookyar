@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'books.apps.BooksConfig',
     'persian_translate',
+    'cart.apps.CartConfig',
 ]
 SITE_ID = 1
 
@@ -81,6 +82,7 @@ TEMPLATES = [
                 'context_processors.context_processors.show_book_list',
                 'context_processors.context_processors.show_category',
                 'context_processors.context_processors.show_discount_book',
+                'context_processors.context_processors.cart',
             ],
         },
     },

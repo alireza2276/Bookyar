@@ -29,6 +29,11 @@
             </div>
         </div>
 
+            <a href="{% url 'cart:cart_detail' %}">
+                <span style="text-decoration: inherit; color: darkmagenta">{{ cart|length }}</span>
+                <img src="{% static 'icons/cart2.png' %}" style="width: 30px; height: 30px;" alt="">
+            </a>
+
         {% if user.is_authenticated %}
             <div class="mx-2 text-white btn btn-secondary">{% translate 'Welcome' %} {{ user.username }}
                 /
@@ -41,8 +46,8 @@
                 <img src="{% static 'icons/login.png' %}" alt="" style="height: 20px; width: 20px;">
 
                 <a class="link-light text-decoration-none"
-                        href="{% url 'account_signup' %}">{% translate 'signup' %}</a>
-                <img src="{% static 'icons/signup.png' %}" alt=""  style="height: 20px; width: 20px;">
+                   href="{% url 'account_signup' %}">{% translate 'signup' %}</a>
+                <img src="{% static 'icons/signup.png' %}" alt="" style="height: 20px; width: 20px;">
             </div>
         {% endif %}
 

@@ -45,7 +45,7 @@
     color: white;
 }
 
-.product-list-fantastic{
+.product-list-fantastic {
     background-color: red;
     color: black;
 }
@@ -63,15 +63,16 @@
     margin-right: 16px;
 }
 
-.uk-slider{
+.uk-slider {
     -webkit-tap-highlight-color: transparent;
 }
 
-.uk-position-relative{
-    position: relative;!important;
+.uk-position-relative {
+    position: relative;
+!important;
 }
 
-.uk-slider-container{
+.uk-slider-container {
     overflow: hidden;
 }
 
@@ -107,7 +108,7 @@ ul {
 }
 
 .uk-text-center {
-    text-align: center!important;
+    text-align: center !important;
 }
 
 .uk-card {
@@ -126,13 +127,13 @@ ul {
 }
 
 .uk-product-image {
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,.16));
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, .16));
     height: 250px;
     vertical-align: middle;
 }
 
 .uk-box-shadow-large {
-    box-shadow: 0 14px 25px rgb(0 0 0 );
+    box-shadow: 0 14px 25px rgb(0 0 0);
 }
 
 .uk-card-small .uk-card-body, .uk-card-small.uk-card-body {
@@ -153,7 +154,7 @@ ul {
 }
 
 .uk-text-muted {
-    color: #999!important;
+    color: #999 !important;
 }
 
 .default-product-card .uk-final-price {
@@ -161,38 +162,44 @@ ul {
     color: #ff6f00;
 }
 
-.uk-card-body>:last-child, .uk-card-footer>:last-child, .uk-card-header>:last-child {
+.uk-card-body > :last-child, .uk-card-footer > :last-child, .uk-card-header > :last-child {
     margin-bottom: 0;
 }
+
 .uk-text-orange {
     color: orange !important;
 }
+
 .uk-text-bold {
     font-weight: 700;
 }
 
 
 .uk-position-absolute {
-    position: absolute!important;
+    position: absolute !important;
 }
 
 .uk-position-center-right-out {
     left: 100%;
     width: max-content;
 }
+
 [class*=uk-position-center-left], [class*=uk-position-center-right] {
     top: 50%;
     transform: translateY(-50%);
 }
+
 [class*=uk-position-bottom], [class*=uk-position-center], [class*=uk-position-left], [class*=uk-position-right], [class*=uk-position-top] {
-    position: absolute!important;
+    position: absolute !important;
     max-width: 100%;
 }
+
 .uk-slidenav {
     padding: 5px 10px;
-    color: rgba(102,102,102,.5);
+    color: rgba(102, 102, 102, .5);
     transition: color .1s ease-in-out;
 }
+
 .uk-icon {
     margin: 0;
     border: none;
@@ -207,5 +214,6 @@ ul {
     fill: currentcolor;
     line-height: 0;
 }
+
 
 
