@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-08 18:26+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: .\cart.py:30
+msgid "book added successfully"
+msgstr "خرید با موفقیت به سبد خرید اضافه شد"
+
+#: .\cart.py:38
+msgid "book removed successfully"
+msgstr "خرید با موفقیت از سبد خرید حذف شد"
+
+#: .\templates\cart\cart_detail.html:33
+msgid "book image"
+msgstr "تصویر محصول"
+
+#: .\templates\cart\cart_detail.html:34
+msgid "book title"
+msgstr "عنوان محصول"
+
+#: .\templates\cart\cart_detail.html:35
+msgid "book discount"
+msgstr "قیمت محصول"
+
+#: .\templates\cart\cart_detail.html:36
+msgid "number"
+msgstr "تعداد محصول"
+
+#: .\templates\cart\cart_detail.html:37
+msgid "total"
+msgstr "جمع"
+
+#: .\templates\cart\cart_detail.html:59 .\templates\cart\cart_detail.html:79
+#: .\templates\cart\cart_detail.html:107
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\cart\cart_detail.html:91
+msgid "remove all cart"
+msgstr "خالی کردن سبد خرید"
+
+#: .\templates\cart\cart_detail.html:103
+msgid "total price"
+msgstr "مجموع قیمت خرید"
+
+#: .\templates\cart\cart_detail.html:114
+msgid "checkout"
+msgstr "ثبت سفارش"

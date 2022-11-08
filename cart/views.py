@@ -3,8 +3,10 @@ from books.models import Book
 from .cart import Cart
 from .forms import AddToCartBookForm
 from django.views.decorators.http import require_POST
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def cart_detail_view(request):
     cart = Cart(request)
 

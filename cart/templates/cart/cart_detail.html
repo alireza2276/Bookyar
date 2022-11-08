@@ -30,21 +30,23 @@
                                         <thead>
                                         <tr>
                                             <th>&nbsp;</th>
-                                            <th>عکس محصول</th>
-                                            <th>نام محصول</th>
-                                            <th>قیمت</th>
-                                            <th>مقدار</th>
-                                            <th>مجموع</th>
+                                            <th>{% translate 'book image' %}</th>
+                                            <th>{% translate 'book title' %}</th>
+                                            <th>{% translate 'book discount' %}</th>
+                                            <th>{% translate 'number' %}</th>
+                                            <th>{% translate 'total' %}</th>
+
                                         </tr>
                                         </thead>
                                         <tbody>
                                         {% for item in cart %}
                                             <tr>
                                                 <td class="product-remove text-left"><a
-                                                        href="{% url 'cart:remove_cart' item.book_obj.id %}"><i
-                                                        class="flaticon flaticon-cross"></i></a></td>
+                                                        href="{% url 'cart:remove_cart' item.book_obj.id %}"><img
+                                                        src="{% static 'icons/close.png' %}" style="height: 20px; width: 20px;" alt=""></a></td>
                                                 <td class="product-thumbnail text-left">
-                                                    <img src="{{ item.book_obj.image.url }}" style="height: 70px; width: 70px;"
+                                                    <img src="{{ item.book_obj.image.url }}"
+                                                         style="height: 70px; width: 70px;"
                                                          alt="Product Thumnail">
                                                 </td>
                                                 <td class="product-name wide-column">
@@ -67,8 +69,9 @@
                                                                    value="{{ item.quantity }}" min="1">
                                                         </div>
                                                         {{ item.book_update_quantity_form.inplace }}
-                                                        <button class="small" type="submit"><i
-                                                                class="fa fa-refresh"></i></button>
+                                                        <button class="small" type="submit"><img
+                                                                src="{% static 'icons/refresh.png' %}"
+                                                                style="width: 20px; height: 20px;" alt=""></button>
                                                     </form>
                                                 </td>
                                                 <td class="product-total-price">
@@ -83,11 +86,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row no-gutters border-top pt--20 mt--20">
-                            <div class="col-sm-6 text-sm-right">
-                                <button type="submit" class="cart-form__btn">خالی کردن سبد خرید</button>
-                            </div>
-                        </div>
                     </form>
                 </div>
                 <div class="col-lg-4">
@@ -97,7 +95,7 @@
 
                                 <div class="cart-calculator__item order-total">
                                     <div class="cart-calculator__item--head">
-                                        <span>جمع کل</span>
+                                        <span>{% translate 'total price' %}</span>
                                     </div>
                                     <div class="cart-calculator__item--value">
                                                 <span class="product-price-wrapper">
@@ -107,8 +105,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="checkout.html" class="btn btn-fullwidth btn-bg-red btn-color-white btn-hover-2">
-                            ثبت سفارش
+                        <a href="checkout.html" class="btn btn-danger" >
+                            {% translate 'checkout' %}
                         </a>
                     </div>
                 </div>
