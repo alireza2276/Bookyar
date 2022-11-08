@@ -36,7 +36,7 @@
 
         {% if user.is_authenticated %}
             <div class="mx-2 text-white btn btn-secondary">{% translate 'Welcome' %} {{ user.username }}
-                /
+
                 <a class="link-light text-decoration-none btn btn-danger"
                    href="{% url 'account_logout' %}">{% translate 'logout' %}</a>
             </div>

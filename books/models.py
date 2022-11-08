@@ -46,12 +46,12 @@ class Book(models.Model):
 
 
 class Comment(models.Model):
-    name = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments')
-    email = models.EmailField()
-    description = models.TextField()
+    name = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, verbose_name=_('name'))
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments', verbose_name=_('book'))
+    email = models.EmailField(_('email'))
+    description = models.TextField(_('description'))
 
-    datetime_created = models.DateTimeField(auto_now_add=True)
+    datetime_created = models.DateTimeField(_('datetime_created'), auto_now_add=True)
 
     def __str__(self):
         return f"{self.name} - {self.book}"

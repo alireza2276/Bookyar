@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.views.generic import TemplateView
+
 from books.models import Book
 from .cart import Cart
 from .forms import AddToCartBookForm
@@ -43,4 +45,5 @@ def remove_cart_view(request, book_id):
     return redirect('cart:cart_detail')
 
 
-
+class Checkout(TemplateView):
+    template_name = 'cart/checkout.html'

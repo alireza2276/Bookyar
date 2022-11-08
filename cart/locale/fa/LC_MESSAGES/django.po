@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-08 18:26+0330\n"
+"POT-Creation-Date: 2022-11-08 20:11+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: .\cart.py:30
 msgid "book added successfully"
 msgstr "خرید با موفقیت به سبد خرید اضافه شد"
@@ -41,23 +42,51 @@ msgstr "قیمت محصول"
 msgid "number"
 msgstr "تعداد محصول"
 
-#: .\templates\cart\cart_detail.html:37
+#: .\templates\cart\cart_detail.html:37 .\templates\cart\checkout.html:105
 msgid "total"
-msgstr "جمع"
+msgstr "مجموع"
 
 #: .\templates\cart\cart_detail.html:59 .\templates\cart\cart_detail.html:79
-#: .\templates\cart\cart_detail.html:107
+#: .\templates\cart\cart_detail.html:102 .\templates\cart\checkout.html:99
+#: .\templates\cart\checkout.html:107
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\cart\cart_detail.html:91
-msgid "remove all cart"
-msgstr "خالی کردن سبد خرید"
-
-#: .\templates\cart\cart_detail.html:103
+#: .\templates\cart\cart_detail.html:98 .\templates\cart\checkout.html:90
 msgid "total price"
-msgstr "مجموع قیمت خرید"
+msgstr "مجموع قیمت محصول"
 
-#: .\templates\cart\cart_detail.html:114
+#: .\templates\cart\cart_detail.html:109
 msgid "checkout"
 msgstr "ثبت سفارش"
+
+#: .\templates\cart\checkout.html:27
+msgid "order detail"
+msgstr "جزئیات سفارش"
+
+#: .\templates\cart\checkout.html:71
+msgid "your note"
+msgstr "یادداشت شما"
+
+#: .\templates\cart\checkout.html:74
+msgid "If you have a note, enter it here. Otherwise, leave this field blank"
+msgstr "اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی بگذارید"
+
+#: .\templates\cart\checkout.html:83
+msgid "your order"
+msgstr "سفارش شما"
+
+#: .\templates\cart\checkout.html:89
+msgid "book"
+msgstr "محصول"
+
+#: .\templates\cart\checkout.html:113
+msgid "Payment method"
+msgstr "روش پرداخت"
+
+#: .\templates\cart\checkout.html:119
+msgid "Zarin Pal online portal"
+msgstr "درگاه آنلاین زرین پال"
+
+#~ msgid "remove all cart"
+#~ msgstr "خالی کردن سبد خرید"
