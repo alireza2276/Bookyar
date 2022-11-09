@@ -23,7 +23,7 @@ class BooksListView(ListView):
 #     template_name = 'books/books_detail.html'
 #     context_object_name = 'book'
 #
-@login_required
+
 def book_detail_view(request, pk):
     book = get_object_or_404(Book, pk=pk)
     book_comment = book.comments.all()

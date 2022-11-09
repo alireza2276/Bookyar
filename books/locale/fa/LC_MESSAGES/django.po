@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-08 19:05+0330\n"
+"POT-Creation-Date: 2022-11-09 19:53+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,13 +124,17 @@ msgstr "اضافه کردن به سبد خرید"
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\books\books_detail.html:96
+#: .\templates\books\books_detail.html:97
 msgid "write your comment"
 msgstr "نظر خود را وارد کنید"
 
-#: .\templates\books\books_detail.html:100
+#: .\templates\books\books_detail.html:101
 msgid "send"
 msgstr "ارسال"
+
+#: .\templates\books\books_detail.html:108
+msgid "for write comment You must first Login"
+msgstr "برای دادن نظر ابتدا باید وارد شوید!"
 
 #: .\templates\books\books_list.html:44
 msgid "Previous"

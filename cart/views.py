@@ -54,3 +54,13 @@ class Checkout(CreateView):
     form_class = OrderForm
     success_url = reverse_lazy('home')
 
+
+
+
+
+
+
+
+
+
+

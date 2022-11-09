@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="{% static 'css/_base.css' %}">
 
 {% include 'pages/header-refrences.html' %}
-{% include 'pages/header.html' %}
 
 <!-- Main Content Wrapper Start -->
 <div class="main-content-wrapper">
@@ -43,7 +42,8 @@
                                             <tr>
                                                 <td class="product-remove text-left"><a
                                                         href="{% url 'cart:remove_cart' item.book_obj.id %}"><img
-                                                        src="{% static 'icons/close.png' %}" style="height: 20px; width: 20px;" alt=""></a></td>
+                                                        src="{% static 'icons/close.png' %}"
+                                                        style="height: 20px; width: 20px;" alt=""></a></td>
                                                 <td class="product-thumbnail text-left">
                                                     <img src="{{ item.book_obj.image.url }}"
                                                          style="height: 70px; width: 70px;"
@@ -105,15 +105,21 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{% url 'cart:checkout' %}" class="btn btn-danger" >
+                        <a href="{% url 'cart:checkout' %}" class="btn btn-danger">
                             {% translate 'checkout' %}
                         </a>
                     </div>
                 </div>
+                <div>
+                    <a class="btn btn-warning" href="{% url 'home' %}"><p>{% translate 'return to home' %}</p>
+                    </a>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
+
 
 {% include 'pages/footer.html' %}
 {% include 'pages/footer-refrences.html' %}

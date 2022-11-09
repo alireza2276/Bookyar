@@ -1,8 +1,10 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from .cart import Cart
 
 
 class Order(models.Model):
+
     first_name = models.CharField(_('first_name'), max_length=50)
     last_name = models.CharField(_('last_name'), max_length=50)
     address = models.CharField(_('address'), max_length=500)

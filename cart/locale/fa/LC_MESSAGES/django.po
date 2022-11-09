@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-08 20:38+0330\n"
+"POT-Creation-Date: 2022-11-09 20:06+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,97 +20,101 @@ msgstr ""
 
 #: .\cart.py:30
 msgid "book added successfully"
-msgstr "خرید با موفقیت به سبد خرید اضافه شد"
+msgstr "کتاب با موفقیت به سبد خرید اضافه شد"
 
 #: .\cart.py:38
 msgid "book removed successfully"
-msgstr "خرید با موفقیت از سبد خرید حذف شد"
+msgstr "کتاب با موفقیت از سبد خرید حذف شد"
 
-#: .\models.py:6
+#: .\models.py:8
 msgid "first_name"
 msgstr "نام"
 
-#: .\models.py:7
+#: .\models.py:9
 msgid "last_name"
 msgstr "نام خانوادگی"
 
-#: .\models.py:8
+#: .\models.py:10
 msgid "address"
 msgstr "آدرس"
 
-#: .\models.py:9
+#: .\models.py:11
 msgid "phone_number"
 msgstr "شماره همراه"
 
-#: .\models.py:10
+#: .\models.py:12
 msgid "email"
 msgstr "ایمیل"
 
-#: .\models.py:11
+#: .\models.py:13
 msgid "your note"
 msgstr "یادداشت شما"
 
-#: .\models.py:17
+#: .\models.py:19
 msgid "Orders"
 msgstr "سفارش ها"
 
-#: .\templates\cart\cart_detail.html:33
+#: .\templates\cart\cart_detail.html:32
 msgid "book image"
 msgstr "تصویر محصول"
 
-#: .\templates\cart\cart_detail.html:34
+#: .\templates\cart\cart_detail.html:33
 msgid "book title"
 msgstr "عنوان محصول"
 
-#: .\templates\cart\cart_detail.html:35
+#: .\templates\cart\cart_detail.html:34
 msgid "book discount"
 msgstr "قیمت محصول"
 
-#: .\templates\cart\cart_detail.html:36
+#: .\templates\cart\cart_detail.html:35
 msgid "number"
 msgstr "تعداد محصول"
 
-#: .\templates\cart\cart_detail.html:37 .\templates\cart\checkout.html:66
+#: .\templates\cart\cart_detail.html:36 .\templates\cart\checkout.html:64
 msgid "total"
 msgstr "مجموع"
 
-#: .\templates\cart\cart_detail.html:59 .\templates\cart\cart_detail.html:79
-#: .\templates\cart\cart_detail.html:102 .\templates\cart\checkout.html:60
-#: .\templates\cart\checkout.html:68
+#: .\templates\cart\cart_detail.html:58 .\templates\cart\cart_detail.html:78
+#: .\templates\cart\cart_detail.html:101 .\templates\cart\checkout.html:58
+#: .\templates\cart\checkout.html:66
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\cart\cart_detail.html:98 .\templates\cart\checkout.html:51
+#: .\templates\cart\cart_detail.html:97 .\templates\cart\checkout.html:49
 msgid "total price"
 msgstr "مجموع قیمت محصول"
 
-#: .\templates\cart\cart_detail.html:109
+#: .\templates\cart\cart_detail.html:108
 msgid "checkout"
 msgstr "ثبت سفارش"
 
-#: .\templates\cart\checkout.html:28
+#: .\templates\cart\checkout.html:26
 msgid "order detail"
 msgstr "جزئیات سفارش"
 
-#: .\templates\cart\checkout.html:36
+#: .\templates\cart\checkout.html:34
 msgid "Send Message"
 msgstr "ارسال سفارش"
 
-#: .\templates\cart\checkout.html:44
+#: .\templates\cart\checkout.html:42
 msgid "your order"
 msgstr "سفارش شما"
 
-#: .\templates\cart\checkout.html:50
+#: .\templates\cart\checkout.html:48
 msgid "book"
 msgstr "محصول"
 
-#: .\templates\cart\checkout.html:74
+#: .\templates\cart\checkout.html:72
 msgid "Payment method"
 msgstr "روش پرداخت"
 
-#: .\templates\cart\checkout.html:80
+#: .\templates\cart\checkout.html:78
 msgid "Zarin Pal online portal"
 msgstr "درگاه آنلاین زرین پال"
+
+#: .\templates\cart\checkout.html:87
+msgid "return to home"
+msgstr "برگشت به صفحه اصلی"
 
 #~ msgid "If you have a note, enter it here. Otherwise, leave this field blank"
 #~ msgstr ""

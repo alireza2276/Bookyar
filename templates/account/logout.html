@@ -3,7 +3,9 @@
 
 
 {% include 'pages/header-refrences.html' %}
-{% include 'pages/header.html' %}
+
+
+{% load i18n %}
 
 <div class="container">
 
@@ -13,9 +15,13 @@
 
             {% csrf_token %}
 
-            <input class="btn btn-success container-md" style="width: 200px" type="submit" value="بله مطمعنم.">
+            <input class="btn btn-success container-md" style="width: 200px" type="submit" value="بله مطمعنم">
+            <br>
+
+
 
         </form>
+        <a  class="btn btn-danger container-md" style="width: 200px" href="{% url 'home' %}"><p>نه برمیگردم</p></a>
     </div>
 
 </div>

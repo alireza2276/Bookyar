@@ -14,8 +14,6 @@
 
 <link rel="stylesheet" href="{% static 'css/_base.css' %}">
 
-{% include 'pages/header.html' %}
-
 <!-- Main Content Wrapper Start -->
 <div class="main-content-wrapper">
     <div class="page-content-inner">
@@ -81,9 +79,16 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
+
                     </div>
+                    <div>
+                        <a class="btn btn-outline-primary" href="{% url 'home' %}"><p>{% translate 'return to home' %}</p></a>
+                    </div>
+
                 </div>
+
                 <!-- Checkout Area End -->
             </div>
         </div>
